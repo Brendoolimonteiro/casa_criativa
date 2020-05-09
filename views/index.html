@@ -1,0 +1,42 @@
+{% extends "layout.html" %}   
+   
+  {% block content %}
+
+
+<section id="intro">
+
+       <header>
+
+        <a href="/">         
+        <img src="/Logo.png" alt="Logo do Projeto">
+        </a>
+        </header>
+      <map>
+
+         <p>
+          Projeto Iniciante para apreender, Curso pratico para aprendizagem
+         </p>
+          de quem nunca mexeu com <strong>HTML, CSS</strong> Estamos estudando para obter conhecimento
+         </p>
+          na area e quem sabe ter uma oportunidade. 
+         </p>
+      </map>
+
+        <section id="buttons"> 
+        <button onclick="onOff()">+ Adcionar Ideia </button>
+        <a href="/ideias" class="button">Ver ideias</a>
+
+</section>
+      
+
+<footer>Com  🤖 <a href="https://www.youtube.com/channel/UCLex0lUgcTO1736GBv5Vctg?view_as=subscriber" target="_blank">
+    Brendo Oliveira</a>
+    </footer>
+</section>
+
+
+<section id="last-ideias">
+  {% include "all_ideas.html" %}
+</section>
+
+{% endblock %}

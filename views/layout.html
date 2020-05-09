@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<!-- 
+        HTML
+
+        Hypertext
+
+        HIPER TEXTO
+        São texto que aceita Links
+         
+        Markup
+
+        Marcação 
+
+        Marcação feitas com <TAGS>
+
+
+        Language
+         
+        Linguagem 
+
+    -->
+<!-- Tag HTML -->
+
+<head> 
+    <!-- RESPONSAVEL POR RECEBER  CONFIGURAÇÕES DA PÁGINA -->
+
+    <meta charset="UTF-8">
+
+    {% block title %} 
+       <title>Projeto De Iniciante</title> 
+    {% endblock title %}
+
+       {% include "head.html" %}  
+
+</head>
+
+<body id="{{bodyId}}">
+ 
+    <div id="container">
+    
+    {% block content %} 
+    {% endblock %}
+
+    </div>
+        
+    <!-- Modal --> 
+
+    {% include "modal.html" %}
+
+    <script src="/scripts.js"></script> 
+
+</body>
+</html>
